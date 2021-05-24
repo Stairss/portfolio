@@ -1,0 +1,14 @@
+.app{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9fr 1fr 90fr;
+  padding: 2rem;
+  overflow: hidden;
+  background: rgb(164,122,6);
+  background: linear-gradient(0deg, rgba(164,122,6,1) 0%, rgba(255,221,0,1) 100%);
+}
+/*home
+  background: rgb(164,122,6);
+  background: linear-gradient(0deg, rgba(164,122,6,1) 0%, rgba(255,221,0,1) 100%); */

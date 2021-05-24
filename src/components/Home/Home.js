@@ -1,0 +1,71 @@
+import './Home.scss'
+import Nav from '../Navigation/Nav';
+import { Button, makeStyles } from '@material-ui/core';
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+
+const useStyles = makeStyles({
+    button: {
+        width: '270px',
+        padding: '0',
+        ['@media (max-width:800px)']: {
+            width: '35%',
+            marginTop: '1rem',
+        }
+
+    },
+    flex: {
+        display: 'grid',
+        gridTemplateColumns: '75fr 25fr',
+        gridTemplateRows: '1fr',
+        // alignItems: 'center',
+        // justifyContent: 'space-between',
+        height: '45px',
+        width: '100%',
+        ['@media (max-width:600px)']: {
+            height: '40px',
+        },
+        ['@media (max-width:400px)']: {
+            height: '35px',
+        },
+
+    },
+    center: {
+        display: 'grid',
+        placeItems: 'center',
+    },
+    resume: {
+        border: 'solid 2px white',
+        height: '100%',
+        borderRight: 'none'
+    },
+    arrow: {
+        border: 'solid 2px white',
+        height: '100%',
+    }
+
+});
+
+const Home = () => {
+    const classes = useStyles();
+    return (
+        <>
+            <Nav />
+            <div className="home">
+                <h1 className="home__title">Dawid Spisak</h1>
+                <h2 className="home__subtitle">Frontend developer</h2>
+                <Button className={classes.button}>
+                    <div className={classes.flex}>
+                        <div className="home__resume">
+                            <span className={`${classes.center} ${classes.resume}`}>Resume</span>
+                        </div>
+                        <div className="home__arrow">
+                            <span className={`${classes.center} ${classes.arrow}`}><ArrowForwardIcon /></span>
+                        </div>
+                    </div>
+                </Button>
+            </div>
+        </>
+    )
+}
+
+export default Home
