@@ -14,7 +14,6 @@ const Nav = () => {
                     <li>Contact</li>
                 </ul>
             </nav>
-            <hr className="nav__underline" />
         </>
     )
 }

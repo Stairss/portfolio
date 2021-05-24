@@ -3,11 +3,23 @@
   height: 100%;
   width: 100%;
   grid-template-columns: 1fr;
-  grid-template-rows: 9fr 1fr 90fr;
+  grid-template-rows: 10fr 90fr;
   padding: 2rem;
   overflow: hidden;
-  background: rgb(164,122,6);
-  background: linear-gradient(0deg, rgba(164,122,6,1) 0%, rgba(255,221,0,1) 100%);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }
 /*home
   background: rgb(164,122,6);
