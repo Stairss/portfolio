@@ -25,6 +25,10 @@
         @media (max-width: 800px){
             display: none;
         }
+        & > li > a{
+            color: white;
+            text-decoration: none;
+        }
 }
 /* &__underline{
     width: 1000%;

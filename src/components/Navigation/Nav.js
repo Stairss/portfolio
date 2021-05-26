@@ -1,4 +1,5 @@
 import './Nav.scss'
+import { NavLink } from 'react-router-dom';
 const Nav = () => {
     return (
         <>
@@ -7,11 +8,11 @@ const Nav = () => {
                     <h3>DS</h3>
                 </div>
                 <ul className="nav__list">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/about">About</NavLink></li>
+                    <li><NavLink to="/skills">Skills</NavLink></li>
+                    <li><NavLink to="/projects">Projects</NavLink></li>
+                    <li><NavLink to="/contact">Contact</NavLink></li>
                 </ul>
             </nav>
         </>

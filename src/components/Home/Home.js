@@ -1,5 +1,4 @@
 import './Home.scss'
-import Nav from '../Navigation/Nav';
 import { Button, makeStyles } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 
@@ -49,11 +48,10 @@ const Home = () => {
     const classes = useStyles();
     return (
         <>
-            <Nav />
             <div className="home">
                 <h1 className="home__title">Dawid Spisak</h1>
                 <h2 className="home__subtitle">Frontend developer</h2>
-                <Button className={classes.button}>
+                <Button className={`${classes.button} home__button`} >
                     <div className={classes.flex}>
                         <div className="home__resume">
                             <span className={`${classes.center} ${classes.resume}`}>Resume</span>
