@@ -6,7 +6,7 @@ const useStyles = makeStyles({
     button: {
         width: '270px',
         padding: '0',
-        ['@media (max-width:800px)']: {
+        '@media (max-width:800px)': {
             width: '35%',
             marginTop: '1rem',
         }
@@ -20,10 +20,10 @@ const useStyles = makeStyles({
         // justifyContent: 'space-between',
         height: '45px',
         width: '100%',
-        ['@media (max-width:600px)']: {
+        '@media (max-width:600px)': {
             height: '40px',
         },
-        ['@media (max-width:400px)']: {
+        '@media (max-width:400px)': {
             height: '35px',
         },
 
