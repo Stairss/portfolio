@@ -1,0 +1,48 @@
+@import '../../index.scss';
+.about{
+    width: 60%;
+    margin: 3rem auto 0 auto;
+    &__info{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr minmax(10vw 50vw);
+    }
+    &__header{
+        color: white;
+        text-align: center;
+        grid-column: 1 / span 2;
+        grid-row: 1 / 2;
+        font-family: 'Tangerine', cursive;
+        font-weight: 400;
+        @include fluid-type(320px, 800px, 24px, 60px);
+    }
+    &__content{
+        display: flex;
+        color: white;
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        &__image{
+            flex-basis: 50%;
+        }
+        &  img{
+            object-fit: contain;
+            // flex-basis: 30%;
+            // width: 30%;
+            width:70%;
+        }
+    }
+    &__description{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+        height: 75%;
+        justify-content: center;
+        & > h2{
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        & > p{
+            letter-spacing: .2px;
+        }
+    }
+}
