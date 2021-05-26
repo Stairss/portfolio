@@ -8,6 +8,7 @@ import Nav from './components/Navigation/Nav';
 import { useLocation } from "react-router-dom";
 import { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import About from './components/About/About';
 
 const useStyles = makeStyles({
   home: {
@@ -16,7 +17,9 @@ const useStyles = makeStyles({
     animation: 'gradient 15s ease infinite'
   },
   about: {
-    background: 'blue',
+    background: 'linear-gradient(-315deg, #000000,#001522, #001e31,#00385a, #00497a, #04619f)',
+    backgroundSize: '4000% 4000%',
+    animation: 'gradient 15s ease infinite'
   },
   skills: {
     color: 'red !important',
@@ -52,7 +55,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/about">
-
+          <About />
         </Route>
         <Route path="/skills">
 
