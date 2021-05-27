@@ -1,48 +1,65 @@
 @import '../../index.scss';
 .about{
-    width: 60%;
-    margin: 3rem auto 0 auto;
-    &__info{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr minmax(10vw 50vw);
-    }
-    &__header{
-        color: white;
-        text-align: center;
-        grid-column: 1 / span 2;
-        grid-row: 1 / 2;
-        font-family: 'Tangerine', cursive;
-        font-weight: 400;
-        @include fluid-type(320px, 800px, 24px, 60px);
-    }
-    &__content{
-        display: flex;
-        color: white;
-        width: 100%;
-        font-family: 'Lato', sans-serif;
-        &__image{
-            flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    // overflow: scroll;
+   &__info{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       font-family: 'Lato', sans-serif;
+        text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+        0px 8px 13px rgba(0,0,0,0.1),
+        0px 18px 23px rgba(0,0,0,0.1);
+       & > h1{
+           color: white;
+           z-index: 10000;
+           position: relative;
+           @include fluid-type(320px, 800px, 34px, 80px);
+       }
+       & > p{
+           color: white;
+           width: 40%;
+           z-index: 10000;
+           position: relative;
+           letter-spacing: 1px;
+           @include fluid-type(320px, 800px, 16px, 24px);
+           text-align: center;
+        @media (max-width: 1200px){
+            width: 80%;
         }
-        &  img{
-            object-fit: contain;
-            // flex-basis: 30%;
-            // width: 30%;
-            width:70%;
+        @media (max-width: 800px){
+            width: 80%;
         }
-    }
-    &__description{
-        display: flex;
+        @media (max-width: 600px){
+            width: 90%;
+        }
+       }
+   }
+   &__animations{
+       display: flex;
+       justify-content: space-between;
+       justify-self: flex-end;
+       @media (max-width: 800px){
         flex-direction: column;
-        flex-basis: 60%;
-        height: 75%;
         justify-content: center;
-        & > h2{
-            margin-bottom: 2rem;
-            font-size: 2rem;
-        }
-        & > p{
-            letter-spacing: .2px;
+        align-items: center;
+    }
+    &  .circle-wrapper{
+        
+        @media (max-width: 1200px){
+            border: 0px solid #3e8caa;
         }
     }
+    & > .sea{
+        
+        @media (max-width: 800px){
+            display: none;
+        }
+    }
+   }
 }
