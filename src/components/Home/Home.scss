@@ -9,6 +9,7 @@
         font-family: 'Tangerine', cursive;
         font-weight: 400;
         @include fluid-type(320px, 800px, 70px, 160px);
+        z-index: 999;
         
     }
     &__subtitle{
@@ -17,11 +18,13 @@
         font-weight: 400;
         @include fluid-type(320px, 800px, 24px, 60px);
         margin-bottom: 2vw;
+        z-index: 999;
     }
     &__resume{
         font-family: 'Lato', sans-serif;
         color: white;
         justify-content: space-between;
+        z-index: 999;
         & > span{
             flex: 0.1;
         }
