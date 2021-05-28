@@ -15,17 +15,22 @@
         list-style-type: none;
         display: flex;
         justify-content: space-between;
-        flex: 0.40;
+        flex: 0.30;
+        font-weight: 700;
         font-size: 1.3rem;
         @media (max-width: 1200px){
-            flex: 0.5;
+            flex: 0.4;
         }
         @media (max-width: 1000px){
-            flex: 0.6;
+            flex: 0.5;
         }
         @media (max-width: 800px){
             display: none;
         }
+}
+&__link{
+    font-size: 1.3rem;
+    font-weight: 700;
 }
 /* &__underline{
     width: 1000%;
