@@ -1,12 +1,37 @@
 import './Nav.scss'
 import { NavLink, Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import useWindowDimensions from './window';
+
 
 const Nav = () => {
-    const [width, setwWdth] = useState(56)
-    const handleHeight = (e) => {
-        setwWdth(e.currentTarget.offsetWidth)
+    const [line, setLine] = useState(56)
+    const [marginLeft, setMarginLeft] = useState(0)
+    const { height, width } = useWindowDimensions();
+    const handleHeight = (e) => { 
+        setLine(e.currentTarget.offsetWidth)
+        if(width > 1200){
+            switch (e.currentTarget.textContent) {
+                case 'Home':
+                    setMarginLeft(0)
+                    break;
+                    case 'About':
+                        setMarginLeft(29)
+                    break;
+                    case 'Skills':
+                        setMarginLeft(58.5)
+                    break;
+                    case 'Projects':
+                        setMarginLeft(86)
+                    break;
+    
+                default:
+                    break;
+            }
+        }
+       
     }
+
     
 return (
     <>
@@ -21,7 +46,7 @@ return (
                 <li><NavLink to="/about" onClick={handleHeight} >About</NavLink></li>
                 <li><NavLink to="/skills" onClick={handleHeight}>Skills</NavLink></li>
                 <li><NavLink to="/projects" onClick={handleHeight}>Projects</NavLink></li>
-                <div className="nav__underbar"  style={{width: `${width}px`}}></div>
+                <div className="nav__underbar"  style={{width: `calc(${line}px + 20px)`, marginLeft: `calc(${marginLeft}% - 10px)`}}></div>
             </ul>
             <div className="nav__link">
                 <Link to="/contact">Contact</Link>
