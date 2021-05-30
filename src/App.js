@@ -49,9 +49,9 @@ function App() {
 
   return (
     <div className={`${handleLocation()} app`}>
-      <Nav />
+      <Nav style={classes.working}/>
       <Switch>
-        <Route path="/" exact>
+        <Route exact path="/" >
           <Home />
         </Route>
         <Route path="/about">

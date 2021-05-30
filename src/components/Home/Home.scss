@@ -1,18 +1,21 @@
 @import '../../index.scss';
-.home{
+
+.home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    &__title{
+
+    &__title {
         color: white;
         font-family: 'Tangerine', cursive;
         font-weight: 400;
         @include fluid-type(320px, 800px, 70px, 160px);
         z-index: 999;
-        
+
     }
-    &__subtitle{
+
+    &__subtitle {
         color: white;
         font-family: 'Simonetta', cursive;
         font-weight: 400;
@@ -20,20 +23,21 @@
         margin-bottom: 2vw;
         z-index: 999;
     }
-    &__resume{
+
+    &__resume {
         font-family: 'Lato', sans-serif;
         color: white;
         justify-content: space-between;
         z-index: 999;
-        & > span{
+
+        &>span {
             flex: 0.1;
         }
     }
-    &__arrow{
-        & > span{
+
+    &__arrow {
+        &>span {
             flex: 0.9;
         }
     }
 }
-
-
