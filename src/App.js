@@ -9,6 +9,7 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import About from './components/About/About';
+import Skills from './Skills/Skills';
 
 const useStyles = makeStyles({
   home: {
@@ -22,7 +23,6 @@ const useStyles = makeStyles({
     animation: 'gradient 15s ease infinite'
   },
   skills: {
-    color: 'red !important',
   },
   projects: {
     color: 'red !important',
@@ -58,7 +58,7 @@ function App() {
           <About />
         </Route>
         <Route path="/skills">
-
+          <Skills />
         </Route>
         <Route path="/projects">
 
