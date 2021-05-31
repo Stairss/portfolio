@@ -1,7 +1,7 @@
 import './Nav.scss'
 import { NavLink, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import useWindowDimensions from './window';
+// import useWindowDimensions from './window';
 
 
 const Nav = () => {

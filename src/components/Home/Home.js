@@ -48,9 +48,9 @@ const useStyles = makeStyles({
 const Home = () => {
     const classes = useStyles();
     return (
-        <>
             <div className="home">
-
+            <div class="blurred-box">
+            <div className="home__content">
                 <h1 className="home__title">Dawid Spisak</h1>
                 <h2 className="home__subtitle">Frontend developer</h2>
                 <Button className={`${classes.button} home__button`} >
@@ -63,10 +63,15 @@ const Home = () => {
                         </div>
                     </div>
                 </Button>
-                <Background />
-
+                </div>
+    {/* <div class="user-login-box">
+    <h1 class="user-icon">Dawid Spisak</h1>
+    <div class="user-name">Gilfoyle</div>
+    <input class="user-password" type="text" />
+  </div> */}
+                </div>
+                {/* <Background /> */}
             </div>
-        </>
     )
 }
 

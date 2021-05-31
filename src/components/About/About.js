@@ -1,6 +1,5 @@
 import './About.scss'
 import Submarine from './Submarine'
-import image from '../../assets/unnamed.png'
 import Octocat from './Octocat'
 import { Wave, Random } from 'react-animated-text';
 const About = () => {
