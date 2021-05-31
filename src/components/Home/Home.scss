@@ -10,7 +10,7 @@ $time: 10s;
     align-items: center;
     height: 100%;
     background: black;
-    background-image: radial-gradient(circle at center, white 0%, #222 10%, black 60%);
+    background-image: radial-gradient(circle at center, white 0%, #222 10%, black 45%);
     overflow: hidden;
     max-width: 100vw;
     width: 100vw;
@@ -23,6 +23,7 @@ $time: 10s;
     &__container{
       transform-style: preserve-3d;
       perspective: 800px;
+      overflow: visible;
 
     }
     &__title {
