@@ -2,6 +2,7 @@ import './Home.scss'
 import { Button, makeStyles } from '@material-ui/core';
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import Background from './Background';
+import Travelers from './Travelers';
 
 const useStyles = makeStyles({
     button: {
@@ -49,7 +50,8 @@ const Home = () => {
     const classes = useStyles();
     return (
             <div className="home">
-            <div class="blurred-box">
+            <div class="home__container">
+            <Travelers />
             <div className="home__content">
                 <h1 className="home__title">Dawid Spisak</h1>
                 <h2 className="home__subtitle">Frontend developer</h2>
@@ -64,11 +66,6 @@ const Home = () => {
                     </div>
                 </Button>
                 </div>
-    {/* <div class="user-login-box">
-    <h1 class="user-icon">Dawid Spisak</h1>
-    <div class="user-name">Gilfoyle</div>
-    <input class="user-password" type="text" />
-  </div> */}
                 </div>
                 {/* <Background /> */}
             </div>
