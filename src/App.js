@@ -6,10 +6,17 @@ import {
 } from "react-router-dom";
 import Nav from './components/Navigation/Nav';
 import { useLocation } from "react-router-dom";
-import { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import About from './components/About/About';
 import Skills from './Skills/Skills';
+import styled, { keyframes } from 'styled-components';
+import { slideInLeft } from 'react-animations';
+
+const slideOutRightAnimation = keyframes`${slideInLeft}`;
+
+const BouncyDiv = styled.div`
+  animation: 1s ${slideOutRightAnimation};
+`;
 
 const useStyles = makeStyles({
   home: {
@@ -52,10 +59,14 @@ function App() {
       <Nav style={classes.working}/>
       <Switch>
         <Route exact path="/" >
+
           <Home />
+
         </Route>
         <Route path="/about">
+        <BouncyDiv>
           <About />
+          </BouncyDiv>
         </Route>
         <Route path="/skills">
           <Skills />
