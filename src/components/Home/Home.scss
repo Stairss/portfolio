@@ -12,6 +12,8 @@ $time: 10s;
     background: black;
     background-image: radial-gradient(circle at center, white 0%, #222 10%, black 60%);
     overflow: hidden;
+    max-width: 100vw;
+    width: 100vw;
     &__content{
       position: relative;
       margin-top: 50px;

@@ -9,10 +9,10 @@ $green: #27ae60;
 
  .skill {
     font-family: 'PT Sans', sans-serif;
+    z-index: 99;
     position: relative;
     width: 40%;
     min-width: 300px;
-    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     list-style: none;
@@ -29,6 +29,7 @@ $green: #27ae60;
 
         }
         .skill__container {
+            z-index: 99;
             background: #555;
             position: relative;
             width: 100%;
