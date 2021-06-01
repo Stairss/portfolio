@@ -24,6 +24,9 @@ html {
     background: transparent;
     box-shadow: $shadows-small;
     animation: animStar 60s linear infinite;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
 
     &:after {
         content: " ";
@@ -42,6 +45,9 @@ html {
     background: transparent;
     box-shadow: $shadows-medium;
     animation: animStar 100s linear infinite;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
 
     &:after {
         content: " ";
@@ -60,6 +66,9 @@ html {
     background: transparent;
     box-shadow: $shadows-big;
     animation: animStar 150s linear infinite;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
 
     &:after {
         content: " ";
