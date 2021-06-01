@@ -12,6 +12,7 @@ import Skills from './Skills/Skills';
 import styled, { keyframes } from 'styled-components';
 import { slideInLeft } from 'react-animations';
 import { NavHashLink } from 'react-router-hash-link';
+import Projects from './components/Projects/Projects';
 
 const slideOutRightAnimation = keyframes`${slideInLeft}`;
 
@@ -62,6 +63,7 @@ function App() {
           <Home />
           <About />
           <Skills />
+          <Projects />
       </div>
     </div>
   );

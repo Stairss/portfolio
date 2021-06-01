@@ -1,4 +1,3 @@
-import Paralax from './Paralax';
 import ShootingStars from './ShootingStars';
 import Skill from './Skill';
 import './Skills.scss';
