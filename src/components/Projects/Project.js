@@ -3,17 +3,14 @@ import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import './Project.scss';
 import ReactHoverObserver from 'react-hover-observer';
+import { useState } from 'react';
 
 
 const useStyles = makeStyles((theme) => ({
     card: {
-      backgroundColor: 'inherit',
-      padding: '20px',
-      backdropFilter: 'contrast(.95) !important',
-    //   backgroundImage: 'linear-gradient(180deg, #5F0A87 0%, #4508B 74%); ', 
-    // boxShadow:  '21px 21px 59px #5a5a5a, -21px -21px 59px black',
-    // boxShadow:  '2px 2px 20px #bebebe, -2px -2px 20px #ffffff',
-    // border: '1px solid black'
+    backgroundColor: 'inherit',
+    padding: '20px',
+    backdropFilter: 'contrast(.95) !important',
     boxShadow: '6px 5px 3px -1px rgba(0,0,0,0.2),0px 10px 10px 10px rgba(0,0,0,0.14),0px 5px 30px 0px rgba(0,0,0,0.12)',
              
 
@@ -21,8 +18,8 @@ const useStyles = makeStyles((theme) => ({
     cardMedia: {
         backgroundPosition: 'center',
         backgroundSize: 'contain',
-
         height: '100%',
+        objectFit: 'contain',
         ['@media (max-width: 802px)']: {
             minHeight: '225px'
         }
@@ -50,21 +47,23 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Project = ({src}) => {
+    // const [isActive, setIsActive] = useState(false)
     const classes = useStyles();
     return (
-        <Card className={classes.card}>
+        <Card className={classes.card}
+        // onClick={setIsActive(!isActive)}
+        >
         <CardMedia 
-        // className={classes.cardMedia} image={src}
+        className={classes.cardMedia} image={src}
         >
         </CardMedia>
-        <CardContent className={classes.cardContent}>
+      {/*   <CardContent className={classes.cardContent}>
             <h2 className={classes.header}>Instagram clone</h2>
             <div className={classes.div}>
                 <LinkIcon className={classes.icon}/>
                 <GitHubIcon className={classes.icon}/>
             </div>
-            {/* <img src="" alt="" /> */}
-            </CardContent>
+            </CardContent> */}
         </Card>
     )
 }
