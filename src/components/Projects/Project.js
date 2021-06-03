@@ -2,7 +2,6 @@ import { Card, CardContent, CardMedia, makeStyles } from '@material-ui/core'
 import LinkIcon from '@material-ui/icons/Link';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import './Project.scss';
-import ReactHoverObserver from 'react-hover-observer';
 import { useState } from 'react';
 
 
