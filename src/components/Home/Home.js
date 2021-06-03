@@ -50,7 +50,7 @@ const Home = () => {
     const classes = useStyles();
     return (
             <div className="home">
-            <div class="home__container">
+            <div className="home__container">
             <Travelers />
             <div className="home__content">
                 <h1 className="home__title">Dawid Spisak</h1>

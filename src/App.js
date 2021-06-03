@@ -14,6 +14,7 @@ import { slideInLeft } from 'react-animations';
 import { NavHashLink } from 'react-router-hash-link';
 import Projects from './components/Projects/Projects';
 
+
 const slideOutRightAnimation = keyframes`${slideInLeft}`;
 
 const BouncyDiv = styled.div`
@@ -60,10 +61,10 @@ function App() {
     <div className={`app`}>
       <Nav/>
       <div className="app__content">
-          <Home />
-          <About />
-          <Skills />
-          <Projects />
+          <Home name="home"/>
+          <About name="about"/>
+          <Skills name="skills"/>
+          <Projects name="projects"/>
       </div>
     </div>
   );

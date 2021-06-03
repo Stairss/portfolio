@@ -1,26 +1,8 @@
-// import Paralax from './Paralax'
-import { Card, CardContent, CardMedia, makeStyles } from '@material-ui/core'
+import Paralax from './Paralax'
 import Project from './Project';
 import './Projects.scss'
 
-const useStyles = makeStyles((theme) => ({
-    card: {
-      backgroundColor: 'inherit',
-      padding: '20px',
-    },
-    cardMedia: {
-        backgroundPosition: 'center',
-        backgroundSize: 'contain',
-        // objectFit: 'contain',
-        height: '100%',
-        // width: '100%',
-    },
-    img:{
-        objectFit: 'contain',
-    }
-}));
 const Projects = () => {
-    const classes = useStyles();
     return (
         <div className="projects">
             {/* <Paralax /> */}

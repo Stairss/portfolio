@@ -17,6 +17,9 @@
         font-size: 2.4rem;
         font-weight: 700;
         flex: 0.1;
+        & > h3 > a{
+            cursor: pointer;
+        }
     }
 
     &__underline {
@@ -43,6 +46,25 @@
             transform-origin: bottom left;
         }
     }
+    &__active{
+        display: inline-block;
+        position: relative;
+        color: white;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(1);
+            height: 2px;
+            bottom: -10%;
+            left: 0;
+            background-color: white;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+            box-shadow: 0px 0px 5px 1px rgba(112, 112, 112, 0.75);
+        }
+
+    }
 
     &__list {
         list-style-type: none;
@@ -53,7 +75,9 @@
         font-size: 1.3rem;
         position: relative;
 
-
+        & > li {
+            cursor: pointer;
+        }
         @media (max-width: 1200px) {
             flex: 0.4;
         }
@@ -76,6 +100,9 @@
     &__link {
         font-size: 1.3rem;
         font-weight: 700;
+        & > a{
+            cursor: pointer;
+        }
     }
 
 }

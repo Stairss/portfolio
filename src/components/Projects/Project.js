@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     padding: '20px',
     backdropFilter: 'contrast(.95) !important',
     boxShadow: '6px 5px 3px -1px rgba(0,0,0,0.2),0px 10px 10px 10px rgba(0,0,0,0.14),0px 5px 30px 0px rgba(0,0,0,0.12)',
+    height: '225px',
              
 
     },
@@ -20,10 +21,6 @@ const useStyles = makeStyles((theme) => ({
         backgroundSize: 'contain',
         height: '100%',
         objectFit: 'contain',
-        ['@media (max-width: 802px)']: {
-            minHeight: '225px'
-        }
-         
     },
     cardContent: {
         height: '100%',
@@ -40,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     },
     header: {
         fontSize: '1.6rem',
+        fontWeight: '400',
     },
     icon: {
         fontSize: '2.5rem'
@@ -47,23 +45,30 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const Project = ({src}) => {
-    // const [isActive, setIsActive] = useState(false)
+    const [isActive, setIsActive] = useState(false)
     const classes = useStyles();
+    console.log(isActive)
+    
     return (
         <Card className={classes.card}
-        // onClick={setIsActive(!isActive)}
+        onClick={() => setIsActive(!isActive)}
         >
-        <CardMedia 
-        className={classes.cardMedia} image={src}
-        >
-        </CardMedia>
-      {/*   <CardContent className={classes.cardContent}>
+
+
+            {
+                isActive ?
+                (        <CardContent className={classes.cardContent}>
             <h2 className={classes.header}>Instagram clone</h2>
             <div className={classes.div}>
                 <LinkIcon className={classes.icon}/>
                 <GitHubIcon className={classes.icon}/>
             </div>
-            </CardContent> */}
+            </CardContent>) :
+        <CardMedia 
+        className={classes.cardMedia} image={src}
+        >
+        </CardMedia>
+            }
         </Card>
     )
 }
