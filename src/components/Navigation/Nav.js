@@ -1,35 +1,86 @@
-import './Nav.scss'
+import "./Nav.scss";
 // import { NavLink, Link } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 // import useWindowDimensions from './window';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-
-
 const Nav = () => {
-    const toggleHome = () => {
-        scroll.scrollToTop();
-    }  
-return (
-
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+  return (
     <>
-        <nav className="nav">
-            <div className="nav__avatar">
-
-                <h3><Link onClick={toggleHome} to="/">DS</Link></h3>
-            </div>
-            <ul className="nav__list">
-                <li><Link smooth={true} spy={true} duration={500} offset={-80} exact='true' className="nav__underline" activeClass="active" to="home" >Home</Link></li>
-                <li><Link smooth={true} spy={true} duration={500} exact='true' offset={-80} className="nav__underline" activeClass="active" to="about">About</Link></li>
-                <li><Link smooth={true} spy={true} duration={500} exact='true' offset={-80}  className="nav__underline" activeClass="active" to="skills">Skills</Link></li>
-                <li><Link smooth={true} spy={true} duration={500} exact='true'  className="nav__underline" activeClass="active" to="projects">Projects</Link></li>
-            </ul>
-            <div className="nav__link">
-                <Link to="/contact">Contact</Link>
-            </div>
-        </nav>
+      <nav className="nav">
+        <div className="nav__avatar">
+          <h3>
+            <Link onClick={toggleHome} to="/">
+              DS
+            </Link>
+          </h3>
+        </div>
+        <ul className="nav__list">
+          <li>
+            <Link
+              smooth={true}
+              spy={true}
+              duration={500}
+              offset={-80}
+              exact="true"
+              className="nav__underline"
+              activeClass="active"
+              to="home"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              smooth={true}
+              spy={true}
+              duration={500}
+              exact="true"
+              offset={-80}
+              className="nav__underline"
+              activeClass="active"
+              to="about"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              smooth={true}
+              spy={true}
+              duration={500}
+              exact="true"
+              offset={-80}
+              className="nav__underline"
+              activeClass="active"
+              to="skills"
+            >
+              Skills
+            </Link>
+          </li>
+          <li>
+            <Link
+              smooth={true}
+              spy={true}
+              duration={500}
+              exact="true"
+              className="nav__underline"
+              activeClass="active"
+              to="projects"
+            >
+              Projects
+            </Link>
+          </li>
+        </ul>
+        <div className="nav__link">
+          <Link to="/contact">Contact</Link>
+        </div>
+      </nav>
     </>
-)
-}
+  );
+};
 
-export default Nav
+export default Nav;

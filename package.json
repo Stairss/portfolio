@@ -14,6 +14,7 @@
     "react-animated-text": "^0.1.4",
     "react-animations": "^1.0.0",
     "react-dom": "^17.0.2",
+    "react-hover-observer": "^2.1.1",
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "4.0.3",
