@@ -1,7 +1,4 @@
 import "./Nav.scss";
-// import { NavLink, Link } from 'react-router-dom';
-import { useEffect, useState } from "react";
-// import useWindowDimensions from './window';
 import { Link, animateScroll as scroll } from "react-scroll";
 import useWindowDimensions from "./window";
 import MenuIcon from "@material-ui/icons/Menu";

@@ -5,7 +5,7 @@ import "./Projects.scss";
 const Projects = () => {
   return (
     <section className="projects">
-      {/* <Paralax /> */}
+      <Paralax />
       <div className="projects__container">
         <div className="projects__header">
           <h1>Projects</h1>

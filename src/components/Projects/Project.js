@@ -1,4 +1,4 @@
-import { Card, CardContent, CardMedia, makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import "./Project.scss";
@@ -6,7 +6,6 @@ import { useState } from "react";
 import "./Project.scss";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-// import ReactHoverObserver from "react-hover-observer";
 
 const useStyles = makeStyles((theme) => ({
   icon: {
@@ -60,7 +59,6 @@ const Project = ({ icon, git, link, name }) => {
           </a>
         </div>
       </div>
-      {/* <Scale> */}
       <div className="project__image">
         <img
           src={icon}
@@ -77,7 +75,6 @@ const Project = ({ icon, git, link, name }) => {
           }
         />
       </div>
-      {/* </Scale> */}
     </div>
   );
 };

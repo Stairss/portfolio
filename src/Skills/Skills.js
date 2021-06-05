@@ -4,10 +4,13 @@ import "./Skills.scss";
 const Skills = () => {
   return (
     <section className="skills">
-      {/* <Paralax /> */}
       <div className="night">
         <ShootingStars />
       </div>
+      <div className="skills__header">
+        <h2>Skills:</h2>
+      </div>
+
       <div className="skills__content">
         <Skill lang="HTML5" color="#c0392b" delay={0} skill={100} />
         <Skill lang="CSS/SASS" color="#1199ff" delay={0.7} skill={95} />

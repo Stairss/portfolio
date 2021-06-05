@@ -1,7 +1,6 @@
 import "./Menu.scss";
 import CloseIcon from "@material-ui/icons/Close";
 import { Facebook, GitHub, Instagram, LinkedIn } from "@material-ui/icons";
-import { useState } from "react";
 const Menu = ({ open, setOpen }) => {
   return (
     <div className="menu">
