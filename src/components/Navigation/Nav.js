@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 // import useWindowDimensions from './window';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-const Nav = () => {
+const Nav = ({ open, setOpen }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
@@ -76,7 +76,9 @@ const Nav = () => {
           </li>
         </ul>
         <div className="nav__link">
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact" onClick={() => setOpen(true)}>
+            Contact
+          </Link>
         </div>
       </nav>
     </>

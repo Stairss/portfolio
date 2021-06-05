@@ -1,19 +1,17 @@
-import './App.scss';
-import Home from './components/Home/Home';
-import {
-  Switch,
-  Route,
-} from "react-router-dom";
-import Nav from './components/Navigation/Nav';
+import "./App.scss";
+import Home from "./components/Home/Home";
+import { Switch, Route } from "react-router-dom";
+import Nav from "./components/Navigation/Nav";
 import { useLocation } from "react-router-dom";
-import { makeStyles } from '@material-ui/core/styles';
-import About from './components/About/About';
-import Skills from './Skills/Skills';
-import styled, { keyframes } from 'styled-components';
-import { slideInLeft } from 'react-animations';
-import { NavHashLink } from 'react-router-hash-link';
-import Projects from './components/Projects/Projects';
-
+import { makeStyles } from "@material-ui/core/styles";
+import About from "./components/About/About";
+import Skills from "./Skills/Skills";
+import styled, { keyframes } from "styled-components";
+import { slideInLeft } from "react-animations";
+import { NavHashLink } from "react-router-hash-link";
+import Menu from "./components/Menu/Menu";
+import Projects from "./components/Projects/Projects";
+import { useState } from "react";
 
 const slideOutRightAnimation = keyframes`${slideInLeft}`;
 
@@ -39,7 +37,6 @@ const BouncyDiv = styled.div`
 //   },
 // });
 
-
 function App() {
   // const classes = useStyles();
   // let location = useLocation();
@@ -56,15 +53,19 @@ function App() {
   //   }
   // }
 
-// ${handleLocation()}
+  // ${handleLocation()}
+  const [open, setOpen] = useState(false);
+  console.log(open);
+
   return (
     <div className={`app`}>
-      <Nav/>
+      {open ? <Menu open={open} setOpen={setOpen} /> : <></>}
+      <Nav open={open} setOpen={setOpen} />
       <div className="app__content">
-          <Home name="home"/>
-          <About name="about"/>
-          <Skills name="skills"/>
-          <Projects name="projects"/>
+        <Home name="home" />
+        <About name="about" />
+        <Skills name="skills" />
+        <Projects name="projects" />
       </div>
     </div>
   );
