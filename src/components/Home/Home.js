@@ -3,6 +3,7 @@ import { Button, makeStyles } from "@material-ui/core";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import Background from "./Background";
 import Travelers from "./Travelers";
+import Fade from "react-reveal/Fade";
 
 const useStyles = makeStyles({
   button: {
@@ -51,24 +52,30 @@ const Home = () => {
       <div className="home__container">
         <Travelers />
         <div className="home__content">
-          <h1 className="home__title">Dawid Spisak</h1>
-          <h2 className="home__subtitle">Frontend developer</h2>
-          <div className="home__wrapper">
-            <Button className={`${classes.button} home__button`}>
-              <div className={classes.flex}>
-                <div className="home__resume">
-                  <span className={`${classes.center} ${classes.resume}`}>
-                    Resume
-                  </span>
+          <Fade top>
+            <h1 className="home__title">Dawid Spisak</h1>
+          </Fade>
+          <Fade right>
+            <h2 className="home__subtitle">Frontend developer</h2>
+          </Fade>
+          <Fade bottom>
+            <div className="home__wrapper">
+              <Button className={`${classes.button} home__button`}>
+                <div className={classes.flex}>
+                  <div className="home__resume">
+                    <span className={`${classes.center} ${classes.resume}`}>
+                      Resume
+                    </span>
+                  </div>
+                  <div className="home__arrow">
+                    <span className={`${classes.center} ${classes.arrow}`}>
+                      <ArrowForwardIcon />
+                    </span>
+                  </div>
                 </div>
-                <div className="home__arrow">
-                  <span className={`${classes.center} ${classes.arrow}`}>
-                    <ArrowForwardIcon />
-                  </span>
-                </div>
-              </div>
-            </Button>
-          </div>
+              </Button>
+            </div>
+          </Fade>
         </div>
       </div>
       {/* <Background /> */}
