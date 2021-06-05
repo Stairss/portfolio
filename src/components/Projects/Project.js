@@ -30,7 +30,7 @@ const Scale = styled.div`
   }
 `;
 
-const Project = ({ src }) => {
+const Project = ({ icon, git, link, name }) => {
   const [isActive, setIsActive] = useState(false);
   const [isHovering, setIsHovering] = useState(true);
   const classes = useStyles();
@@ -50,16 +50,20 @@ const Project = ({ src }) => {
             : { visibility: "hidden" }
         }
       >
-        <h2 className="project__header">Instagram Clone</h2>
+        <h2 className="project__header">{name}</h2>
         <div className="project__icons">
-          <LinkIcon className={classes.icon} />
-          <GitHubIcon className={classes.icon} />
+          <a href={link}>
+            <LinkIcon className={classes.icon} />
+          </a>
+          <a href={git}>
+            <GitHubIcon className={classes.icon} />
+          </a>
         </div>
       </div>
       {/* <Scale> */}
       <div className="project__image">
         <img
-          src={src}
+          src={icon}
           alt="img"
           className="project__img"
           style={
