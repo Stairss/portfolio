@@ -30,7 +30,7 @@ $time: 10s;
         color: white;
         font-family: 'Tangerine', cursive;
         font-weight: 400;
-        @include fluid-type(320px, 800px, 57.5px, 130px);
+        @include fluid-type(320px, 800px, 75px, 130px);
         z-index: 999;
 
     }
@@ -40,7 +40,7 @@ $time: 10s;
         font-family: 'Simonetta', cursive;
         font-weight: 400;
         font-size: 16px;
-        @include fluid-type(320px, 800px, 24px, 60px);
+        @include fluid-type(320px, 800px, 22px, 52.5px);
         margin-bottom: 2vw;
         z-index: 999;
     }
@@ -54,6 +54,9 @@ $time: 10s;
         &>span {
             flex: 0.1;
         }
+    }
+    &__wrapper{
+        width: 100%;
     }
 
     &__arrow {

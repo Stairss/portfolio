@@ -6,19 +6,20 @@ import Travelers from "./Travelers";
 
 const useStyles = makeStyles({
   button: {
-    width: "270px",
+    width: "75%",
+    maxWidth: "270px",
+    minWidth: "170px",
     padding: "0",
+    marginTop: "1vw",
     "@media (max-width:800px)": {
-      width: "35%",
-      marginTop: "1rem",
+      marginTop: "2vw",
+      width: "50%",
     },
   },
   flex: {
     display: "grid",
     gridTemplateColumns: "75fr 25fr",
     gridTemplateRows: "1fr",
-    // alignItems: 'center',
-    // justifyContent: 'space-between',
     height: "45px",
     width: "100%",
     "@media (max-width:600px)": {
@@ -52,20 +53,22 @@ const Home = () => {
         <div className="home__content">
           <h1 className="home__title">Dawid Spisak</h1>
           <h2 className="home__subtitle">Frontend developer</h2>
-          <Button className={`${classes.button} home__button`}>
-            <div className={classes.flex}>
-              <div className="home__resume">
-                <span className={`${classes.center} ${classes.resume}`}>
-                  Resume
-                </span>
+          <div className="home__wrapper">
+            <Button className={`${classes.button} home__button`}>
+              <div className={classes.flex}>
+                <div className="home__resume">
+                  <span className={`${classes.center} ${classes.resume}`}>
+                    Resume
+                  </span>
+                </div>
+                <div className="home__arrow">
+                  <span className={`${classes.center} ${classes.arrow}`}>
+                    <ArrowForwardIcon />
+                  </span>
+                </div>
               </div>
-              <div className="home__arrow">
-                <span className={`${classes.center} ${classes.arrow}`}>
-                  <ArrowForwardIcon />
-                </span>
-              </div>
-            </div>
-          </Button>
+            </Button>
+          </div>
         </div>
       </div>
       {/* <Background /> */}
