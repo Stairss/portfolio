@@ -17,66 +17,58 @@ const Projects = () => {
         <div className="projects__content">
           <Fade bottom>
             <Project
-              icon="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
-              git="#"
-              link=""
-              name="Instagram Clone"
+              icon="https://www.freeiconspng.com/thumbs/amazon-icon/amazon-icon--socialmedia-iconset--uiconstock-0.png"
+              git="https://github.com/Stairss/amazon-clone-with-ecommerce"
+              link="https://clone-ba7cf.web.app/"
+              name="Amazon Clone"
             />
           </Fade>
           <Fade bottom>
             <Project
-              icon="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
-              git="#"
-              link=""
-              name="Instagram Clone"
+              icon="http://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png"
+              git="https://github.com/Stairss/twitter-clone"
+              link="https://twitter-clone-5ab4b.web.app"
+              name="Twitter Clone"
             />
           </Fade>
           <Fade bottom>
             <Project
-              icon="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
-              git="#"
-              link=""
-              name="Instagram Clone"
+              icon="https://image.flaticon.com/icons/png/512/1/1560.png"
+              git="https://github.com/Stairss/todo-app"
+              link="https://todo-app-cfe6d.web.app"
+              name="Todo App"
             />
           </Fade>
           <Fade bottom>
             <Project
-              icon="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
-              git="#"
-              link=""
-              name="Instagram Clone"
+              icon="https://www.freepnglogos.com/uploads/discord-logo-png/concours-discord-cartes-voeux-fortnite-france-6.png"
+              git="https://github.com/Stairss/discord-clone"
+              link="https://discord-clone-b219e.web.app"
+              name="Discord Clone"
             />
           </Fade>
           <Fade bottom>
             <Project
-              icon="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
-              git="#"
-              link=""
-              name="Instagram Clone"
+              icon="https://openvisualfx.com/wp-content/uploads/2019/10/linkedin-icon-logo-png-transparent.png"
+              git="https://github.com/Stairss/linkedin-clone"
+              link="https://linkedin-clone-f7c63.web.app/"
+              name="LinkedIn Clone"
             />
           </Fade>
           <Fade bottom>
             <Project
-              icon="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
-              git="#"
-              link=""
-              name="Instagram Clone"
+              icon="https://cdn2.iconfinder.com/data/icons/gears-wheels-blades/512/wheel_cover-512.png"
+              git="https://github.com/Stairss/hubcap-configurator"
+              link="http://magmeagencyssd.e-kei.pl/config_2021/stage/project/"
+              name="Hubcap Configurator"
             />
           </Fade>
           <Fade bottom>
             <Project
-              icon="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
+              icon="https://pics.freeicons.io/uploads/icons/png/21201021021574330934-512.png"
               git="#"
               link=""
-              name="Instagram Clone"
-            />
-          </Fade>
-          <Fade bottom>
-            <Project
-              icon="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png"
-              git="#"
-              link=""
-              name="Instagram Clone"
+              name="Portfolio"
             />
           </Fade>
         </div>

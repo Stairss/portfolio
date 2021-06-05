@@ -78,7 +78,11 @@ const Nav = ({ open, setOpen }) => {
         </ul>
         <div className="nav__link">
           {width > 800 ? (
-            <Link to="/contact" onClick={() => setOpen(true)}>
+            <Link
+              className="nav__underline"
+              to="/contact"
+              onClick={() => setOpen(true)}
+            >
               Contact
             </Link>
           ) : (

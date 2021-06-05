@@ -1,5 +1,6 @@
 import "./Skill.scss";
 import styled, { keyframes } from "styled-components";
+import { useInView } from "react-intersection-observer";
 
 const Animation = (skill) => keyframes`
     0% {  width: 0%; } 
@@ -19,6 +20,8 @@ const Progress = styled.span`
 `;
 
 const Skill = ({ lang, color, delay, skill }) => {
+  const { ref, inView, entry } = useInView();
+
   return (
     <ul className="skill">
       <li>

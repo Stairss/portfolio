@@ -8,32 +8,22 @@ import { slideInLeft } from "react-animations";
 import Menu from "./components/Menu/Menu";
 import Projects from "./components/Projects/Projects";
 import { useEffect, useState } from "react";
-import AOS from "aos";
-const slideOutRightAnimation = keyframes`${slideInLeft}`;
 
-const BouncyDiv = styled.div`
-  animation: 1s ${slideOutRightAnimation};
-`;
-
-function App() {
+const App = () => {
   const [open, setOpen] = useState(false);
-  useEffect(() => {
-    AOS.init();
-    console.log("dziala");
-  }, []);
 
   return (
     <div className={`app`}>
       {open ? <Menu open={open} setOpen={setOpen} /> : <></>}
       <Nav open={open} setOpen={setOpen} />
       <div className="app__content">
-        <Home name="home" data-aos="fade" />
-        <About name="about" data-aos="fade" />
-        <Skills name="skills" data-aos="fade" />
+        <Home name="home" />
+        <About name="about" />
+        <Skills name="skills" />
         <Projects name="projects" />
       </div>
     </div>
   );
-}
+};
 
 export default App;

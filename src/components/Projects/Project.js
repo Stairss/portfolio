@@ -33,7 +33,6 @@ const Project = ({ icon, git, link, name }) => {
   const [isActive, setIsActive] = useState(false);
   const [isHovering, setIsHovering] = useState(true);
   const classes = useStyles();
-  console.log(isActive);
 
   return (
     <div
@@ -51,10 +50,10 @@ const Project = ({ icon, git, link, name }) => {
       >
         <h2 className="project__header">{name}</h2>
         <div className="project__icons">
-          <a href={link}>
+          <a href={link} target="_blank" rel="noreferrer">
             <LinkIcon className={classes.icon} />
           </a>
-          <a href={git}>
+          <a href={git} target="_blank" rel="noreferrer">
             <GitHubIcon className={classes.icon} />
           </a>
         </div>

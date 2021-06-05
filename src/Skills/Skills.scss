@@ -29,10 +29,10 @@ $shooting-time: 3000ms;
 
 .night {
   position: relative;
-  top: 0%;
+  top: 30%;
   z-index: 1;
-  left: 45%;
-  transform: translate(-50%, 0);
+  left: 25%;
+  // transform: translate(-50%, 0);
   transform: rotateZ(45deg);
 }
 
