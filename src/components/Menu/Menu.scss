@@ -1,7 +1,8 @@
+@import '../../index.scss';
 .menu{
     position:fixed;
-    width: calc(100vw - 4rem);
-    height: calc(100vh - 4rem);
+    width: calc(100vw - 4vw);
+    height: calc(100vh - 4vw);
     background-color: white;
     z-index: 99999999999;
     top: 50%;
@@ -9,17 +10,23 @@
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: calc(130px - 4rem) 8fr 3fr;
+    grid-template-rows: calc(112px - 4rem) 8fr 3fr;
     font-family: 'lato';
     &__close{
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        padding-right: 2rem;
+        padding-right: 2vw;
+        padding-top: 2vw;
         & > svg{
             font-size: 2rem;
         }
     }
+/*     $min_width: 320px;
+$max_width: 1200px;
+$min_font: 16px;
+$max_font: 24px; */
+
     &__content{
         display: flex;
         flex-direction: column;
@@ -27,9 +34,11 @@
         justify-content: center;
         & > h2{
             font-weight: 400;
+            @include fluid-type(320px, 800px, 16px, 24px);
         }
         & > h1{
             font-weight: 700;
+            @include fluid-type(320px, 800px, 24px, 32px);
         }
     }
     &__socials{

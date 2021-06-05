@@ -11,7 +11,7 @@
     // background-color: black;
     position: fixed;
     z-index: 99999999;
-      padding: 2rem 2rem;
+      padding: 2vw 2vw;
 
     &__avatar {
         font-size: 2.4rem;
@@ -103,6 +103,10 @@
         & > a{
             cursor: pointer;
         }
+        & > svg{
+            font-size: 2.1rem;
+        }
+
     }
 
 }

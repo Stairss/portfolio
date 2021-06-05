@@ -3,11 +3,15 @@ import "./Nav.scss";
 import { useEffect, useState } from "react";
 // import useWindowDimensions from './window';
 import { Link, animateScroll as scroll } from "react-scroll";
+import useWindowDimensions from "./window";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const Nav = ({ open, setOpen }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+  const { height, width } = useWindowDimensions();
+
   return (
     <>
       <nav className="nav">
@@ -76,9 +80,13 @@ const Nav = ({ open, setOpen }) => {
           </li>
         </ul>
         <div className="nav__link">
-          <Link to="/contact" onClick={() => setOpen(true)}>
-            Contact
-          </Link>
+          {width > 800 ? (
+            <Link to="/contact" onClick={() => setOpen(true)}>
+              Contact
+            </Link>
+          ) : (
+            <MenuIcon onClick={() => setOpen(true)} />
+          )}
         </div>
       </nav>
     </>
