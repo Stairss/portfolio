@@ -38,7 +38,7 @@
         height: 185px;
         width: 100%;
         object-fit: contain;
-        transition: all .3s ease-in-out;
+        transition: transform .3s ease-in-out;
         &:hover{
             animation: scale .4s ease-in-out;
         }

@@ -4,6 +4,8 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import "./Project.scss";
 import { useState } from "react";
 import "./Project.scss";
+import styled from "styled-components";
+import { keyframes } from "styled-components";
 // import ReactHoverObserver from "react-hover-observer";
 
 const useStyles = makeStyles((theme) => ({
@@ -11,6 +13,22 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "2.5rem",
   },
 }));
+
+const scale = keyframes`
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.1);
+    }
+`;
+
+const Scale = styled.div`
+  &:hover {
+    opacity: 0.4;
+    animation: ${scale} 0.4s ease-in-out;
+  }
+`;
 
 const Project = ({ src }) => {
   const [isActive, setIsActive] = useState(false);
@@ -38,6 +56,7 @@ const Project = ({ src }) => {
           <GitHubIcon className={classes.icon} />
         </div>
       </div>
+      {/* <Scale> */}
       <div className="project__image">
         <img
           src={src}
@@ -45,11 +64,16 @@ const Project = ({ src }) => {
           className="project__img"
           style={
             isActive
-              ? { transform: "scale(1.1)", opacity: ".4" }
+              ? {
+                  transform: "scale(1.1)",
+                  opacity: ".4",
+                  filter: "blur(2px)",
+                }
               : { transform: "scale(1)" }
           }
         />
       </div>
+      {/* </Scale> */}
     </div>
   );
 };
