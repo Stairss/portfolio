@@ -68,7 +68,7 @@ const Home = () => {
                   </div>
                   <div className="home__arrow">
                     <span className={`${classes.center} ${classes.arrow}`}>
-                      <ArrowForwardIcon />
+                      <ArrowForwardIcon style={{ color: "white" }} />
                     </span>
                   </div>
                 </div>
