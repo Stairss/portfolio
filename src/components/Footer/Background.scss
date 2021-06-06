@@ -52,6 +52,7 @@
   left: 140px;
   animation: float 4.5s infinite;
   @media (max-width: 1400px) {
+    display: none;
   }
 }
 @keyframes float {
