@@ -1,0 +1,44 @@
+.footer {
+  height: 100vh;
+  background: linear-gradient(#512888 0%, #e73c7e 50%, #ee7752 100%);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  &__quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /*     padding-bottom: 10vh;
+    padding-left: 5vw;*/
+    // padding-right: 10vw;
+    font-family: "Simonetta", cursive;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    & > h2 {
+      font-size: 5rem;
+      color: white;
+    }
+  }
+  & > h3 {
+    position: absolute;
+    font-family: "lato";
+    color: white;
+    bottom: 2.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+  }
+}
+body {
+  overflow: hidden;
+}
+.app__content {
+  overflow: hidden;
+}

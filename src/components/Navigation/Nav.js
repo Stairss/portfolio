@@ -2,15 +2,16 @@ import "./Nav.scss";
 import { Link, animateScroll as scroll } from "react-scroll";
 import useWindowDimensions from "./window";
 import MenuIcon from "@material-ui/icons/Menu";
+import Fade from "react-reveal/Fade";
 
 const Nav = ({ open, setOpen }) => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   return (
-    <>
+    <Fade top>
       <nav className="nav">
         <div className="nav__avatar">
           <h3>
@@ -86,11 +87,11 @@ const Nav = ({ open, setOpen }) => {
               Contact
             </Link>
           ) : (
-            <MenuIcon onClick={() => setOpen(true)} />
+            <MenuIcon onClick={() => setOpen(open + 1)} />
           )}
         </div>
       </nav>
-    </>
+    </Fade>
   );
 };
 

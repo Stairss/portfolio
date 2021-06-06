@@ -7,10 +7,10 @@ import Modal from "./components/Modal/Modal";
 import Projects from "./components/Projects/Projects";
 import { useEffect, useState } from "react";
 import "transition-style";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const [open, setOpen] = useState(0);
-  console.log(open);
 
   useEffect(() => {
     setOpen(0);
@@ -25,6 +25,7 @@ const App = () => {
         <About name="about" />
         <Skills name="skills" />
         <Projects name="projects" />
+        <Footer />
       </div>
     </div>
   );

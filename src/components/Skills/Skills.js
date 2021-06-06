@@ -1,7 +1,6 @@
 import ShootingStars from "./ShootingStars";
 import Skill from "./Skill";
 import "./Skills.scss";
-import ScrollAnimation from "react-animate-on-scroll";
 import Fade from "react-reveal/Fade";
 import Bounce from "react-reveal/Bounce";
 const Skills = () => {

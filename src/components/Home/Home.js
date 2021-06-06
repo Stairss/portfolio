@@ -1,7 +1,6 @@
 import "./Home.scss";
 import { Button, makeStyles } from "@material-ui/core";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import Background from "./Background";
 import Travelers from "./Travelers";
 import Fade from "react-reveal/Fade";
 
@@ -52,13 +51,13 @@ const Home = () => {
       <div className="home__container">
         <Travelers />
         <div className="home__content">
-          <Fade top>
+          <Fade top delay={400}>
             <h1 className="home__title">Dawid Spisak</h1>
           </Fade>
-          <Fade right>
+          <Fade right delay={400}>
             <h2 className="home__subtitle">Frontend developer</h2>
           </Fade>
-          <Fade bottom>
+          <Fade bottom delay={400}>
             <div className="home__wrapper">
               <Button className={`${classes.button} home__button`}>
                 <div className={classes.flex}>
