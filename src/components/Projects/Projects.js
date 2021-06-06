@@ -18,7 +18,7 @@ const Projects = () => {
           <Fade bottom>
             <Project
               icon="https://i.pinimg.com/originals/a1/21/5b/a1215bccdeb94a4985541a9178afb1f8.png"
-              git="#"
+              git="https://github.com/Stairss/portfolio.git"
               link=""
               name="Portfolio"
             />
