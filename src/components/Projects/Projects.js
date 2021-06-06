@@ -17,7 +17,7 @@ const Projects = () => {
         <div className="projects__content">
           <Fade bottom>
             <Project
-              icon="https://pics.freeicons.io/uploads/icons/png/21201021021574330934-512.png"
+              icon="https://i.pinimg.com/originals/a1/21/5b/a1215bccdeb94a4985541a9178afb1f8.png"
               git="#"
               link=""
               name="Portfolio"
@@ -33,7 +33,7 @@ const Projects = () => {
           </Fade>
           <Fade bottom>
             <Project
-              icon="https://cdn2.iconfinder.com/data/icons/gears-wheels-blades/512/wheel_cover-512.png"
+              icon="https://i1.wp.com/www.tidyalloys.com/wp-content/uploads/tidyalloys.com_prestige_icon.png?fit=514%2C514&ssl=1"
               git="https://github.com/Stairss/hubcap-configurator"
               link="http://magmeagencyssd.e-kei.pl/config_2021/stage/project/"
               name="Hubcap Configurator"
@@ -67,7 +67,7 @@ const Projects = () => {
 
           <Fade bottom>
             <Project
-              icon="https://image.flaticon.com/icons/png/512/1/1560.png"
+              icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/GNOME_Todo_icon_2019.svg/1200px-GNOME_Todo_icon_2019.svg.png"
               git="https://github.com/Stairss/todo-app"
               link="https://todo-app-cfe6d.web.app"
               name="Todo App"

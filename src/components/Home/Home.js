@@ -3,6 +3,7 @@ import { Button, makeStyles } from "@material-ui/core";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
 import Travelers from "./Travelers";
 import Fade from "react-reveal/Fade";
+import cv from "../../assets/cv.png";
 
 const useStyles = makeStyles({
   button: {
@@ -59,7 +60,11 @@ const Home = () => {
           </Fade>
           <Fade bottom delay={400}>
             <div className="home__wrapper">
-              <Button className={`${classes.button} home__button`}>
+              <Button
+                className={`${classes.button} home__button`}
+                download="dawid_spisak_resume"
+                href={cv}
+              >
                 <div className={classes.flex}>
                   <div className="home__resume">
                     <span className={`${classes.center} ${classes.resume}`}>
