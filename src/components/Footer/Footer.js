@@ -17,7 +17,6 @@ const Footer = () => {
       </LightSpeed>
 
       <h3>
-        {" "}
         <Bounce bottom>© 2021 Copyright. All rights reserved. </Bounce>
       </h3>
     </section>

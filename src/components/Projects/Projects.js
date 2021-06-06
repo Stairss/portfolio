@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="projects__container">
         <div className="projects__header">
           <Bounce left>
-            <h1>Projects</h1>
+            <h1>Projects:</h1>
           </Bounce>
         </div>
         <div className="projects__content">
