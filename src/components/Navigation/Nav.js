@@ -81,7 +81,7 @@ const Nav = ({ open, setOpen }) => {
             <Link
               className="nav__underline"
               to="/contact"
-              onClick={() => setOpen(true)}
+              onClick={() => setOpen(open + 1)}
             >
               Contact
             </Link>
