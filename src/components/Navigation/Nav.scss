@@ -10,7 +10,12 @@
   position: fixed;
   z-index: 99999999;
   padding: 2vw 2vw;
-
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4206057422969187) 0%,
+    rgba(0, 0, 0, 0.1292892156862745) 88%,
+    rgba(0, 0, 0, 0) 100%
+  );
   &__avatar {
     font-size: 2.4rem;
     font-weight: 700;
