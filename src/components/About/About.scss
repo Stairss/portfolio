@@ -55,11 +55,12 @@
       font-style: italic;
       @include fluid-type(320px, 900px, 14px, 30px);
     }
-    & > h3 {
+    /*     & > h3 {
       font-size: 1.5rem;
       font-weight: 500;
+      display: flex;
       @include fluid-type(320px, 900px, 17px, 40px);
-    }
+    } */
     @media (max-width: 1000px) {
       width: 70%;
     }
@@ -68,6 +69,17 @@
     }
     @media (max-width: 500px) {
       width: 90%;
+    }
+  }
+  &__typewriter {
+    display: flex;
+    justify-content: center;
+    & > h3 {
+      font-weight: 600;
+      @include fluid-type(320px, 900px, 17px, 40px);
+    }
+    & > h3:nth-child(1) {
+      margin-right: 4px;
     }
   }
   &__animations {

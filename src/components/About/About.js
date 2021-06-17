@@ -17,7 +17,25 @@ const About = () => {
             “First, solve the problem. Then,
             <br /> write the code.”
           </h2>
-          <h3>I'm PROGRAMMER...</h3>
+          <div className="about__typewriter">
+            <h3>I'm</h3>
+            <h3>
+              <Typewriter
+                options={{
+                  strings: [
+                    "Developer...",
+                    "Programmer...",
+                    "Software Engineer...",
+                    "Designer...",
+                    "Geek...",
+                    "Man with passion...",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h3>
+          </div>
         </div>
       </div>
     </section>
