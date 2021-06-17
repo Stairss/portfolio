@@ -1,10 +1,6 @@
 import "./About.scss";
-// import Submarine from './Submarine'
-// import Octocat from './Octocat'
-import { Wave } from "react-animated-text";
 import Fade from "react-reveal/Fade";
-import Rocket from "./Rocket";
-// import Zoom from "react-reveal/Zoom";
+import Typewriter from "typewriter-effect";
 
 const About = () => {
   return (
@@ -14,25 +10,15 @@ const About = () => {
         <div class="line"></div>
         <div class="line"></div>
       </div>
-      <div className="about__info">
-        <Fade left>
-          <h1>
-            <Wave text="I'm Dawid Spisak" effect="stretch" effectChange={2.0} />
-          </h1>
-        </Fade>
-        <Fade right>
-          <p>
-            Enthusiastic Web Developer, Freelancer eager to contribute to team
-            success through hard work, attention to detail and excellent
-            organizational skills. Clear understanding of Javascript, React,
-            Redux and MERN. Motivated to learn, grow and excel in the Dev
-            industry.
-          </p>
-        </Fade>
-      </div>
-      <div className="about__animations">
-        {/* <Octocat /> */}
-        {/* <Submarine /> */}
+      <div className="about__container">
+        <div className="about__info">
+          <h1>Welcome to my world</h1>
+          <h2>
+            “First, solve the problem. Then,
+            <br /> write the code.”
+          </h2>
+          <h3>I'm PROGRAMMER...</h3>
+        </div>
       </div>
     </section>
   );

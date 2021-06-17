@@ -1,4 +1,5 @@
 @import "../../index.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,400&display=swap");
 .about {
   display: flex;
   flex-direction: column;
@@ -11,7 +12,7 @@
   position: relative;
   font-family: sans-serif;
   overflow: hidden;
-  &__info {
+  &__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,29 +23,51 @@
     font-family: "Lato", sans-serif;
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1),
       0px 18px 23px rgba(0, 0, 0, 0.1);
+    // @include fluid-type(320px, 800px, 34px, 80px); h1
+    //   @include fluid-type(320px, 800px, 16px, 24px); p
+
+    color: white;
+  }
+  &__info {
+    height: 40%;
+    width: 60%;
+    background-color: #17191f11;
+    //   background: rgba(255, 255, 255, 1);
+    overflow: hidden;
+    filter: contrast(1.05) !important;
+    box-shadow: 6px 5px 3px -1px rgba(0, 0, 0, 0.2),
+      0px 10px 10px 10px rgba(0, 0, 0, 0.14),
+      0px 5px 30px 0px rgba(0, 0, 0, 0.12);
+    z-index: 9999999;
+    border-radius: 15px;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     & > h1 {
-      color: white;
-      //    z-index: 10000;
-      position: relative;
-      @include fluid-type(320px, 800px, 34px, 80px);
+      @include fluid-type(320px, 900px, 19px, 50px) // font-size: 1.7rem;
+;
     }
-    & > p {
-      color: white;
-      width: 40%;
-      //    z-index: 10000;
-      position: relative;
-      letter-spacing: 1px;
-      @include fluid-type(320px, 800px, 16px, 24px);
-      text-align: center;
-      @media (max-width: 1200px) {
-        width: 80%;
-      }
-      @media (max-width: 800px) {
-        width: 80%;
-      }
-      @media (max-width: 600px) {
-        width: 90%;
-      }
+    & > h2 {
+      // font-size: 1.4rem;
+      font-weight: 400;
+      font-style: italic;
+      @include fluid-type(320px, 900px, 14px, 30px);
+    }
+    & > h3 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      @include fluid-type(320px, 900px, 17px, 40px);
+    }
+    @media (max-width: 1000px) {
+      width: 70%;
+    }
+    @media (max-width: 750px) {
+      width: 80%;
+    }
+    @media (max-width: 500px) {
+      width: 90%;
     }
   }
   &__animations {
@@ -76,7 +99,8 @@
   right: 0;
   height: 100%;
   margin: auto;
-  width: 90vw;
+  width: 100%;
+  z-index: 1;
 }
 .line:nth-child(2) {
   background-image: linear-gradient(
@@ -94,7 +118,7 @@
   left: 50%;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.02),
     rgba(0, 0, 0, 0)
   );
   overflow: hidden;
@@ -116,15 +140,37 @@
     animation: drop 7s 0s infinite;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+    z-index: 1;
   }
   &:nth-child(1) {
-    margin-left: -25%;
+    margin-left: -30%;
+    @media (max-width: 1000px) {
+      margin-left: -35%;
+    }
+    @media (max-width: 750px) {
+      margin-left: -40%;
+    }
+    @media (max-width: 500px) {
+      margin-left: -45%;
+    }
     &::after {
       animation-delay: 2s;
     }
   }
+  &:nth-child(2) {
+    display: none;
+  }
   &:nth-child(3) {
-    margin-left: 25%;
+    margin-left: 30%;
+    @media (max-width: 1000px) {
+      margin-left: 35%;
+    }
+    @media (max-width: 750px) {
+      margin-left: 40%;
+    }
+    @media (max-width: 500px) {
+      margin-left: 45%;
+    }
     &::after {
       animation-delay: 2.5s;
     }

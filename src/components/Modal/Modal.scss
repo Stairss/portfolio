@@ -22,8 +22,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 2vw;
-    padding-top: 2vw;
+    padding-right: 1.5rem;
+    padding-top: 2rem;
     & > svg {
       font-size: 2rem;
       cursor: pointer;
@@ -90,4 +90,8 @@
 .continuous-5:hover {
   --d: -101%;
   transition: 0.5s;
+}
+
+[transition="out:circle:center"] {
+  --transition__duration: 2;
 }
