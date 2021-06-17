@@ -18,7 +18,7 @@ const About = () => {
             <br /> write the code.”
           </h2>
           <div className="about__typewriter">
-            <h3>I'm</h3>
+            <h3>I'm a</h3>
             <h3>
               <Typewriter
                 options={{
@@ -28,7 +28,7 @@ const About = () => {
                     "Software Engineer...",
                     "Designer...",
                     "Geek...",
-                    "Man with passion...",
+                    "man with passion...",
                   ],
                   autoStart: true,
                   loop: true,

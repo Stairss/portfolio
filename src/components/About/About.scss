@@ -79,7 +79,13 @@
       @include fluid-type(320px, 900px, 17px, 40px);
     }
     & > h3:nth-child(1) {
-      margin-right: 4px;
+      margin-right: 0.75vw;
+      @media (max-width: 1000px) {
+        margin-right: 8px;
+      }
+      @media (max-width: 375px) {
+        margin-right: 5px;
+      }
     }
   }
   &__animations {
