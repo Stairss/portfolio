@@ -61,7 +61,7 @@ const Project = ({ icon, git, link, name }) => {
       <div className="project__image">
         <img
           src={icon}
-          alt="img"
+          alt={name}
           className="project__img"
           style={
             isActive

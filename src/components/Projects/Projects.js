@@ -73,6 +73,14 @@ const Projects = () => {
               name="Todo App"
             />
           </Fade>
+          <Fade bottom>
+            <Project
+              icon="https://www.nicepng.com/png/full/137-1372714_free-calculator-icon-black-png-transparent-background-calculator.png"
+              git="https://github.com/stairss/calculator"
+              link="https://stairss.github.io/calculator/"
+              name="Calculator App"
+            />
+          </Fade>
         </div>
       </div>
     </section>
