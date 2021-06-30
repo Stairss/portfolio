@@ -9,7 +9,7 @@ const Menu = ({ open, setOpen }) => {
       className="menu"
       transition-style={
         open % 2 == 1 ? "in:circle:center" : "out:circle:center"
-      }
+      } // update animation
     >
       <div className="menu__close">
         <CloseIcon onClick={() => setOpen(open + 1)} />
