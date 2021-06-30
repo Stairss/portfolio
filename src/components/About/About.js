@@ -32,7 +32,7 @@ const About = () => {
                       "Software Engineer...",
                       "Designer...",
                       "Geek...",
-                      "man with passion...",
+                      "Man with passion...",
                     ],
                     autoStart: true,
                     loop: true,

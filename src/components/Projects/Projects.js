@@ -81,6 +81,14 @@ const Projects = () => {
               name="Calculator App"
             />
           </Fade>
+          <Fade bottom>
+            <Project
+              icon="https://www.freeiconspng.com/thumbs/timer-icon/timer-icon-15.png"
+              git="https://github.com/stairss/countdown-timer"
+              link="https://stairss.github.io/countdown-timer/"
+              name="Countdown timer"
+            />
+          </Fade>
         </div>
       </div>
     </section>
