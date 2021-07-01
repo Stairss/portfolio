@@ -6,6 +6,8 @@ import Fade from "react-reveal/Fade";
 import cv from "../../assets/cv.png";
 import Particles from "react-particles-js";
 import { useState } from "react";
+import { useWindowSize } from "./useWindowSize";
+import { useEffect } from "react";
 
 const useStyles = makeStyles({
   button: {
@@ -49,7 +51,17 @@ const useStyles = makeStyles({
 
 const Home = () => {
   const classes = useStyles();
-  const [value, setValue] = useState(0);
+  const size = useWindowSize();
+  const [value, setValue] = useState(50);
+  useEffect(() => {
+    if (size.width < 1000) {
+      setValue(30);
+    } else {
+      setValue(60);
+    }
+  }, [size.width]);
+  console.log(value);
+
   return (
     <section className="home">
       <Particles
@@ -57,7 +69,7 @@ const Home = () => {
         params={{
           particles: {
             number: {
-              value: 30,
+              value: value,
             },
             size: {
               value: 3,
@@ -106,7 +118,6 @@ const Home = () => {
           </Fade>
         </div>
       </div>
-      {/* <Background /> */}
     </section>
   );
 };
