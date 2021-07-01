@@ -1,9 +1,11 @@
 import "./Home.scss";
 import { Button, makeStyles } from "@material-ui/core";
 import ArrowForwardIcon from "@material-ui/icons/ArrowForward";
-import Travelers from "./Travelers";
+// import Travelers from "./Travelers";
 import Fade from "react-reveal/Fade";
 import cv from "../../assets/cv.png";
+import Particles from "react-particles-js";
+import { useState } from "react";
 
 const useStyles = makeStyles({
   button: {
@@ -47,10 +49,32 @@ const useStyles = makeStyles({
 
 const Home = () => {
   const classes = useStyles();
+  const [value, setValue] = useState(0);
   return (
     <section className="home">
+      <Particles
+        style={{ position: "absolute", left: "0", top: "0" }}
+        params={{
+          particles: {
+            number: {
+              value: 30,
+            },
+            size: {
+              value: 3,
+            },
+          },
+          interactivity: {
+            events: {
+              onhover: {
+                enable: true,
+                mode: "repulse",
+              },
+            },
+          },
+        }}
+      />
       <div className="home__container">
-        <Travelers />
+        {/* <Travelers /> */}
         <div className="home__content">
           <Fade top delay={400}>
             <h1 className="home__title">Dawid Spisak</h1>
