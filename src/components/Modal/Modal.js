@@ -13,7 +13,18 @@ const Menu = ({ open, setOpen }) => {
       // className={`${open % 2 == 1 ? "menu menu__open" : "menu menu__closed"}`}
     >
       <div className="menu__close">
-        <CloseIcon onClick={() => setOpen(open + 1)} />
+        <span href="#" class="close-button" onClick={() => setOpen(open + 1)}>
+          <div class="in">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+          <div class="out">
+            <div class="close-button-block"></div>
+            <div class="close-button-block"></div>
+          </div>
+        </span>
+
+        {/* <CloseIcon onClick={() => setOpen(open + 1)} /> */}
       </div>
       <div className="menu__content">
         <h2>Contact me</h2>
