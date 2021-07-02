@@ -25,9 +25,51 @@ $time: 10s;
     z-index: 1;
   }
   &__button {
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.4), 10px 10px rgba(0, 0, 0, 0.3),
-      15px 15px rgba(0, 0, 0, 0.2), 20px 20px rgba(0, 0, 0, 0.1),
-      25px 25px rgba(0, 0, 0, 0.05);
+    position: relative;
+    display: inline-flex;
+    width: 140px;
+    height: 45px;
+    & > a {
+      font-size: 1rem;
+      letter-spacing: 1px;
+      transform-style: preserve-3d;
+      transform: translateZ(-25px);
+      transition: transform 0.25s;
+      font-family: "Montserrat", sans-serif;
+    }
+    & > a::before,
+    a::after {
+      position: absolute;
+      content: "RESUME 🡪";
+      height: 45px;
+      width: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      border-radius: 5px;
+      @media (max-width: 600px) {
+        width: 140px;
+      }
+      @media (max-width: 400px) {
+        width: 130px;
+      }
+    }
+    & > a::before {
+      color: #fff;
+      background: #000;
+      border: 1px solid white;
+      transform: rotateY(0deg) translateZ(25px);
+    }
+    & > a::after {
+      color: #fff;
+      background: #000;
+      border: 1px solid white;
+      transform: rotateX(90deg) translateZ(25px);
+    }
+    & > a:hover {
+      transform: translateZ(-25px) rotateX(-90deg);
+    }
   }
   &__container {
     transform-style: preserve-3d;
