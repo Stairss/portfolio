@@ -217,3 +217,23 @@
   animation-name: circle-out-center;
   animation-timing-function: ease-in-out !important;
 }
+
+.basic-6 {
+  background: linear-gradient(currentColor 0 0) bottom / var(--d, 20%) 3px
+    no-repeat;
+  transition: 0.5s;
+
+  padding-bottom: 6px;
+}
+.basic-6:hover {
+  --d: 80%;
+}
+.continuous-5 {
+  background: linear-gradient(currentColor 0 0) var(--d, 201%) 100% /200% 3px no-repeat;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+.continuous-5:hover {
+  --d: -101%;
+  transition: 0.5s;
+}
