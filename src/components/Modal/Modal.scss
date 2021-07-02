@@ -72,23 +72,65 @@
     }
   }
 }
-.basic-6 {
-  background: linear-gradient(currentColor 0 0) bottom / var(--d, 20%) 3px
-    no-repeat;
-  transition: 0.5s;
 
-  padding-bottom: 6px;
+@keyframes circle-in-center {
+  0% {
+    -webkit-clip-path: circle(0%);
+    clip-path: circle(0%);
+  }
+  to {
+    -webkit-clip-path: circle(125%);
+    clip-path: circle(125%);
+  }
 }
-.basic-6:hover {
-  --d: 80%;
+
+@keyframes circle-in-center {
+  0% {
+    -webkit-clip-path: circle(0%);
+    clip-path: circle(0%);
+  }
+  100% {
+    -webkit-clip-path: circle(125%);
+    clip-path: circle(125%);
+  }
 }
-.continuous-5 {
-  background: linear-gradient(currentColor 0 0) var(--d, 201%) 100% /200% 3px no-repeat;
-  padding-bottom: 6px;
-  cursor: pointer;
+[transition-style="in:circle:center"] {
+  -webkit-animation-name: circle-in-center;
+  animation-name: circle-in-center;
 }
-.continuous-5:hover {
-  --d: -101%;
-  transition: 0.5s;
+
+@keyframes circle-out-center {
+  0% {
+    -webkit-clip-path: circle(125%);
+    clip-path: circle(125%);
+  }
+  to {
+    -webkit-clip-path: circle(0%);
+    clip-path: circle(0%);
+  }
 }
-//update animation
+[transition-style="out:circle:center"] {
+  -webkit-animation-name: circle-out-center;
+  animation-name: circle-out-center;
+}
+
+@keyframes circle-out-center {
+  0% {
+    -webkit-clip-path: circle(125%);
+    clip-path: circle(125%);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-clip-path: circle(0%);
+    clip-path: circle(0%);
+    opacity: 0;
+  }
+}
+[transition-style="out:circle:center"] {
+  -webkit-animation-name: circle-out-center;
+  animation-name: circle-out-center;
+  animation-timing-function: ease-in-out !important;
+}

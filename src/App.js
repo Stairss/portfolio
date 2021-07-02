@@ -15,6 +15,7 @@ const App = () => {
   useEffect(() => {
     setOpen(0);
   }, []);
+  console.log(open);
 
   return (
     <div className={`app`}>
