@@ -67,10 +67,10 @@ const Projects = () => {
 
           <Fade bottom>
             <Project
-              icon="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/GNOME_Todo_icon_2019.svg/1200px-GNOME_Todo_icon_2019.svg.png"
-              git="https://github.com/Stairss/todo-app"
-              link="https://todo-app-cfe6d.web.app"
-              name="Todo App"
+              icon="https://cdn2.iconfinder.com/data/icons/mobile-banking-ver-1a/100/1-11-512.png"
+              git="https://github.com/stairss/admin-panel"
+              link="https://stairss.github.io/admin-panel"
+              name="Admin Panel"
             />
           </Fade>
           <Fade bottom>
