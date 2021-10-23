@@ -35,7 +35,7 @@ const Projects = () => {
             <Project
               icon="https://i1.wp.com/www.tidyalloys.com/wp-content/uploads/tidyalloys.com_prestige_icon.png?fit=514%2C514&ssl=1"
               git="https://github.com/Stairss/hubcap-configurator"
-              link="http://magmeagencyssd.e-kei.pl/config_2021/stage/project/"
+              link="https://config.gorecki.pl/"
               name="Hubcap Configurator"
             />
           </Fade>
